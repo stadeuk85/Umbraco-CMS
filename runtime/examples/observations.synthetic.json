@@ -1,0 +1,26 @@
+{
+  "notice": "SYNTHETIC TEST DATA ONLY",
+  "observations": [
+    {
+      "platform": "ChatGPT Search",
+      "search_mode": "web",
+      "market": "UK",
+      "locale": "en-GB",
+      "status": "OBSERVED",
+      "eligible": true,
+      "brand_mentioned": true,
+      "material_error": false,
+      "citations": [
+        "https://example.org/article"
+      ]
+    },
+    {
+      "platform": "Claude Search",
+      "search_mode": "web",
+      "market": "UK",
+      "locale": "en-GB",
+      "status": "NOT_TESTED",
+      "reason": "No platform execution"
+    }
+  ]
+}
