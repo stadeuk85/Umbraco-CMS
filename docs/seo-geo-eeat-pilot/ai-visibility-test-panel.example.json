@@ -1,0 +1,48 @@
+{
+  "notice": "Synthetic sample, not executed observations",
+  "version": "0.1",
+  "prompt_template_fields": [
+    "id",
+    "intent",
+    "question",
+    "market",
+    "locale",
+    "brand_context",
+    "approved_fact_ids"
+  ],
+  "prompts": [
+    {
+      "id": "P001",
+      "intent": "entity-facts",
+      "question": "What does Example Brand do?",
+      "market": "UK",
+      "locale": "en-GB",
+      "brand_context": "branded",
+      "approved_fact_ids": []
+    },
+    {
+      "id": "P002",
+      "intent": "discovery",
+      "question": "How do private banking and wealth management services differ in the UK?",
+      "market": "UK",
+      "locale": "en-GB",
+      "brand_context": "unbranded",
+      "approved_fact_ids": []
+    }
+  ],
+  "run_record_fields": [
+    "run_id",
+    "timestamp_utc",
+    "product",
+    "search_mode",
+    "market",
+    "locale",
+    "question_id",
+    "response_text_ref",
+    "citations",
+    "brand_mentioned",
+    "verified_claims",
+    "unknowns",
+    "not_tested_reason"
+  ]
+}

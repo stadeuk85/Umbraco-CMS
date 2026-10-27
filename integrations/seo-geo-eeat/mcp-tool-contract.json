@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "description": "Interface contract only; does not provide an operational MCP server.",
+  "auth": {
+    "requirements": [
+      "OIDC delegated identity",
+      "server-side role and content scope checks",
+      "no secrets in prompts",
+      "audit logs",
+      "staging before production"
+    ]
+  },
+  "tools": [
+    {
+      "name": "umbraco_read_content",
+      "mode": "read",
+      "input": {
+        "node_id": "string",
+        "culture": "string"
+      },
+      "output": [
+        "node_id",
+        "version",
+        "content_type",
+        "fields",
+        "culture",
+        "updated_at"
+      ]
+    },
+    {
+      "name": "umbraco_read_content_type",
+      "mode": "read",
+      "input": {
+        "content_type": "string"
+      },
+      "output": [
+        "editable_fields",
+        "field_aliases",
+        "supported_cultures",
+        "validation"
+      ]
+    },
+    {
+      "name": "umbraco_propose_draft",
+      "mode": "dry_run",
+      "input": {
+        "node_id": "string",
+        "culture": "string",
+        "expected_version": "string",
+        "changes": "array"
+      },
+      "output": [
+        "proposal_id",
+        "diff",
+        "policy_flags"
+      ]
+    },
+    {
+      "name": "umbraco_write_draft",
+      "mode": "write",
+      "input": {
+        "proposal_id": "string",
+        "node_id": "string",
+        "culture": "string",
+        "expected_version": "string",
+        "editor_approval_reference": "string",
+        "idempotency_key": "string"
+      },
+      "output": [
+        "draft_id",
+        "version",
+        "save_state"
+      ]
+    },
+    {
+      "name": "umbraco_read_draft",
+      "mode": "read",
+      "input": {
+        "draft_id": "string"
+      },
+      "output": [
+        "draft_id",
+        "version",
+        "fields",
+        "publication_state"
+      ]
+    }
+  ],
+  "guards": {
+    "deny_operations": [
+      "publish",
+      "unpublish",
+      "delete",
+      "permission_change",
+      "template_deployment",
+      "bulk_edit"
+    ],
+    "allowlisted_fields_only": true,
+    "optimistic_concurrency": true,
+    "readback_verification": true,
+    "no_autonomous_external_actions": true
+  }
+}

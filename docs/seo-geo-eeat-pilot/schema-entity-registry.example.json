@@ -1,0 +1,30 @@
+{
+  "notice": "EXAMPLE SHAPE ONLY. All values synthetic; populate from approved private entity facts, not inferred information.",
+  "schema_version": "1.0",
+  "entities": [
+    {
+      "entity_id": "EXAMPLE-ENTITY-001",
+      "market": "example-market",
+      "locale": "en-GB",
+      "legal_name": "Example Financial Services Ltd",
+      "brand_name": "Example Brand",
+      "approved_urls": [
+        "https://example.org/"
+      ],
+      "verified_facts": [],
+      "source_record_id": "APPROVED-SOURCE-ID",
+      "source_owner": "approved business owner",
+      "reviewed_at": null,
+      "regulatory_disclosure_id": null
+    }
+  ],
+  "authors": [
+    {
+      "author_id": "EXAMPLE-AUTHOR",
+      "profile_url": "https://example.org/authors/example",
+      "verified_credentials": [],
+      "source_record_id": "APPROVED-PROFILE",
+      "reviewed_at": null
+    }
+  ]
+}
