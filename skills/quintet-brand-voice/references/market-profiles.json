@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "status": "provisional_public_inference_not_brand_approved",
+  "reviewed_at": "2026-10-27",
+  "markets": [
+    {
+      "id": "GB",
+      "brand": "Brown Shipley",
+      "locales": [
+        "en-GB"
+      ],
+      "voice": [
+        "warm-professional",
+        "practical",
+        "reassuring but not promising",
+        "reader-centred"
+      ],
+      "style": [
+        "accessible UK English",
+        "explain technical issues using real-life planning choices",
+        "client goals before services",
+        "retain specific risk and tax caveats"
+      ],
+      "evidence": [
+        "https://brownshipley.com/en-gb/what-we-do/wealth-planning",
+        "https://brownshipley.com/en-gb/news-and-insights/wealth-planning-101",
+        "https://brownshipley.com/en-gb/news-and-insights/the-wealth-conversations-worth-having-before-saying-i-do"
+      ]
+    },
+    {
+      "id": "BE",
+      "brand": "Puilaetco",
+      "locales": [
+        "fr-BE",
+        "nl-BE"
+      ],
+      "voice": [
+        "discreet",
+        "relationship-led",
+        "considered",
+        "family and entrepreneurial wealth context"
+      ],
+      "style": [
+        "use native Belgian French or Dutch",
+        "respect formal address norms unless local approved copy differs",
+        "do not infer one linguistic version from the other",
+        "review each language independently"
+      ],
+      "evidence": [
+        "https://www.puilaetco.be/"
+      ],
+      "verification_note": "Local-language sample set needs human/native-language confirmation before production."
+    },
+    {
+      "id": "DE",
+      "brand": "Merck Finck",
+      "locales": [
+        "de-DE"
+      ],
+      "voice": [
+        "precise",
+        "thoughtful",
+        "heritage-aware without nostalgia",
+        "expert-led"
+      ],
+      "style": [
+        "formal Sie address by default",
+        "structured factual summaries for substantive insights",
+        "avoid exaggerated wealth/luxury claims",
+        "distinguish wealth from legacy and social impact"
+      ],
+      "evidence": [
+        "https://www.merckfinck.de/de-de/analyse-und-ausblick/vermoegen-und-vermaechtnis-was-bleibt-und-wie-sie-langfristige-wirkung-schaffen"
+      ]
+    },
+    {
+      "id": "NL",
+      "brand": "InsingerGilissen",
+      "locales": [
+        "nl-NL"
+      ],
+      "voice": [
+        "direct",
+        "personal",
+        "grounded",
+        "helpful"
+      ],
+      "style": [
+        "native Netherlands Dutch",
+        "clear explanation of advice and service",
+        "pronoun/level of formality requires checking against current local examples",
+        "avoid artificial Anglicisms"
+      ],
+      "evidence": [
+        "https://www.insingergilissen.nl/"
+      ],
+      "verification_note": "Needs broader independently reviewed article corpus."
+    },
+    {
+      "id": "LU",
+      "brand": "Quintet Luxembourg",
+      "locales": [
+        "en-LU",
+        "fr-LU",
+        "de-LU"
+      ],
+      "voice": [
+        "international",
+        "measured",
+        "technical where justified",
+        "relationship-oriented"
+      ],
+      "style": [
+        "identify private versus institutional audience",
+        "make relevant cross-border context precise",
+        "use exact approved language per service and locale",
+        "separate B2B custody language from family wealth copy"
+      ],
+      "evidence": [
+        "https://www.quintet.com/en-gb/",
+        "https://www.quintet.com/en-gb/media/quintet-introduces-quintet-financial-services-qfs"
+      ],
+      "verification_note": "Local locale list and native page examples must be confirmed."
+    },
+    {
+      "id": "DK",
+      "brand": "Quintet Danmark",
+      "locales": [
+        "da-DK"
+      ],
+      "voice": [
+        "personal",
+        "clear",
+        "understated",
+        "forward-looking"
+      ],
+      "style": [
+        "native Danish",
+        "reader-led language",
+        "avoid unsubstantiated market leadership",
+        "confirm locally preferred form of address"
+      ],
+      "evidence": [
+        "https://www.quintet.dk/"
+      ],
+      "verification_note": "Local native-language editorial corpus requires verification."
+    }
+  ]
+}
